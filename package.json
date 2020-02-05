@@ -1,0 +1,45 @@
+{
+  "name": "lim011-fe-md-links",
+  "version": "1.0.0",
+  "description": "library md-links",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "eslint": "eslint --ext .js lib/ test/",
+    "stylelint": "stylelint --aei lib/**/*.css",
+    "test": "jest --verbose --coverage",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omairapalacios/LIM011-fe-md-links.git"
+  },
+  "keywords": [
+    "markdown",
+    "links",
+    "library"
+  ],
+  "author": "Omaira Palacios",
+  "license": "ISC",
+  "bin": {
+    "md-links": "lib/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/omairapalacios/LIM011-fe-md-links/issues"
+  },
+  "homepage": "https://github.com/omairapalacios/LIM011-fe-md-links#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "jsdom": "^16.0.1",
+    "markdown-it": "^10.0.0",
+    "node-fetch": "^2.6.0"
+  }
+}
