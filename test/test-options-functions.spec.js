@@ -4,9 +4,6 @@ const optFunctions = require('../lib/options-functions');
 
 fetchMock.config.sendAsJson = false;
 fetchMock.config.overwriteRoutes = true;
-// fetchMock.config.fallbackToNetwork = true;
-
-// jest.mock('node-fetch');
 
 fetchMock
   .mock('https://nodejs.org/api/path.html', 200)
