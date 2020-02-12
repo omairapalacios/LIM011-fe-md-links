@@ -7,7 +7,7 @@
   <b >md-links es una librería de node.js para obtener links de archivos markdown</b>
 </p>
 
-## Descripción y contexto
+## Descripción
 
 Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que
 muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de
