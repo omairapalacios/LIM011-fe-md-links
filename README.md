@@ -6,7 +6,9 @@
 <p align="center">
  
 </p>
->md-links es una librería desarrollada con Node.js para obtener links de archivos markdown.
+
+>md-links es una librería desarrollada con Node.js para obtener links de archivos markdown : https://cpalaciosanchez.gitbook.io/md-links/
+
 
 ## Descripción
 
