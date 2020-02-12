@@ -4,7 +4,6 @@
 </p>
 <h1 align="center">MD-LINKS</h1>
 <p align="center">
- 
 </p>
 
 >md-links es una librería desarrollada con Node.js para obtener links de archivos markdown : [Documentación md-links](https://cpalaciosanchez.gitbook.io/md-links/)
@@ -83,5 +82,5 @@ Revisa la documentación técnica para más ejemplos en [CLI](https://app.gitboo
 
 ### LICENCIA
 
-Licencia Copyright (c) 2020, Omaira Palacios (Licencia MIT) [Licencia](https://github.com/omairapalacios/LIM011-fe-md-links/blob/master/LICENSE).
+Licencia Copyright (c) 2020, Omaira Palacios [Licencia MIT](https://github.com/omairapalacios/LIM011-fe-md-links/blob/master/LICENSE).
 
