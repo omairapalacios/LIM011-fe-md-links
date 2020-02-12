@@ -2,20 +2,25 @@
 <p align="center">
   <img width="90" src="utils/mdlinks-logo.png">
 </p>
-<h1 align="center"> md-links </h1>
+<h1 align="center">MD-LINKS</h1>
 <p align="center">
-  <b >md-links es una librería de node.js para obtener links de archivos markdown</b>
+ 
 </p>
+ > md-links es una librería desarrollada con Node.js para obtener links de archivos markdown.
 
 ## Descripción
+
+Markdown es un lenguaje de marcado ligero muy popular entre developers. Es usado en muchísimas plataformas que manejan texto plano (GitHub, foros, blogs, ...), y es muy común encontrar varios archivos en ese formato en cualquier tipo de repositorio (empezando por el tradicional README.md)
 
 Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que
 muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de
 la información que se quiere compartir.
 
-Md-links es una librería desarrollada con [Node.js](https://nodejs.org/), que permite leer y analizar archivos
-en formato `Markdown` existentes en una ruta, para verificar los links que contengan y generar
+md-links es una librería desarrollada con [Node.js](https://nodejs.org/), que permite leer y analizar archivos en formato `Markdown` dada una ruta, extrae los links que contengan y generar
 algunas estadísticas.
+
+Revisa la planificación del [proyecto](https://github.com/omairapalacios/LIM011-fe-md-links/projects)y el [diagrama de flujo](https://github.com/omairapalacios/LIM011-fe-md-links/blob/master/utils/Diagrama_Mdlinks.svg).
+
 
 ## Instalación
 
@@ -49,7 +54,7 @@ mdlinks("./some/example.md", { validate: true })
   })
   .catch(console.error);
 ```
-Revisa la documentación técnica para más ejemplos en [API](/docs/typescript.md).
+Revisa la documentación técnica para más ejemplos en [API](https://app.gitbook.com/@cpalaciosanchez/s/md-links/~/drafts/-M-sT4KG7g-CvWSTihyB/).
 
 ### A través de la linea de comandos:
 
@@ -72,9 +77,9 @@ $ md-links ./some/example.md --validate
 ./some/example.md https://es.reactjs.org/ 200 Ok Librería 
 ./some/example.md https://es.wikipedia.org/ 400 Fail Wikipedia
 ```
-Revisa la documentación técnica para más ejemplos en [CLI](/docs/typescript.md).
+Revisa la documentación técnica para más ejemplos en [CLI](https://app.gitbook.com/@cpalaciosanchez/s/md-links/~/drafts/-M-sT4KG7g-CvWSTihyB/cli-md-links).
 
 ### LICENCIA
 
-Licencia Copyright (c) 2020, Omaira Palacios (Licencia MIT) [Licencia](LICENSE).
+Licencia Copyright (c) 2020, Omaira Palacios (Licencia MIT) [Licencia](https://github.com/omairapalacios/LIM011-fe-md-links/blob/master/LICENSE).
 
