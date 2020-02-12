@@ -7,7 +7,7 @@
  
 </p>
 
->md-links es una librería desarrollada con Node.js para obtener links de archivos markdown : https://cpalaciosanchez.gitbook.io/md-links/
+>md-links es una librería desarrollada con Node.js para obtener links de archivos markdown : [Documentación md-links](https://cpalaciosanchez.gitbook.io/md-links/)
 
 
 ## Descripción
@@ -21,7 +21,7 @@ la información que se quiere compartir.
 md-links es una librería desarrollada con [Node.js](https://nodejs.org/), que permite leer y analizar archivos en formato `Markdown` dada una ruta, extrae los links que contengan y generar
 algunas estadísticas.
 
-Revisa la planificación del [proyecto](https://github.com/omairapalacios/LIM011-fe-md-links/projects)y el [diagrama de flujo](https://github.com/omairapalacios/LIM011-fe-md-links/blob/master/utils/Diagrama_Mdlinks.svg).
+Revisa la planificación del [proyecto](https://github.com/omairapalacios/LIM011-fe-md-links/projects) y el [diagrama de flujo](https://github.com/omairapalacios/LIM011-fe-md-links/blob/master/utils/Diagrama_Mdlinks.svg).
 
 
 ## Instalación
