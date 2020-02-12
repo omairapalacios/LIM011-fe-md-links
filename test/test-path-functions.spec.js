@@ -37,27 +37,27 @@ describe('test for functions with path library', () => {
 });
 
 describe('test for functions with fs library', () => {
-  test('should resolve promise if path is directory', () => {
+  it('should resolve promise if path is directory', () => {
     return pathFunctions.checkStatsPath(process.cwd())
       .then((stats) => {
         expect(stats.isDirectory()).toBe(true);
       });
   });
 
-  test('should resolve promise if path is file', () => {
+  it('should resolve promise if path is file', () => {
     return pathFunctions.checkStatsPath(path.join(process.cwd(), 'test', 'testMdLinks', 'README.md'))
       .then((stats) => {
         expect(stats.isFile()).toBe(true);
       });
   });
 
-  test('should resolve and return directory content ', () => {
+  it('should resolve and return directory content ', () => {
     return pathFunctions.readDirectory(path.join(process.cwd(), 'test', 'testMdLinks'))
       .then((files) => {
         expect(files).toEqual(['README.md', 'files']);
       });
   });
-  test('should resolve and return file content ', () => {
+  it('should resolve and return file content ', () => {
     return pathFunctions.readFile(path.join(process.cwd(), 'test', 'testMdLinks', 'README.md'), 'utf8')
       .then((text) => {
         expect(text).toMatch('');

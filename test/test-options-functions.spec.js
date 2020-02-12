@@ -17,17 +17,23 @@ fetchMock
   .mock('https://nodejs.org/api/path.html', 200)
   .mock('https://docs.npmjs.com/misc/scripts', 200)
   .mock('https://se/', 400)
-  .mock('https://developer.moziles/docs/Glossary/Ca', 400);
+  .mock('https://jfsfsfestjs.io/', 400)
+  .mock('https://medium.com/@lupoool-primeros-pasos-a934515174fb', 404)
 
-describe('HTTP', () => {
+describe('test to http request using node-fetch library', () => {
   it('should return an array of objects with five properties : href, text, file, status and message ', () => {
     return optFunctions.validateLinks(testData.arrayThree).then((data) => {
       expect(data).toEqual(testData.arrayFive);
     });
   });
   it('should return an array of objects with five properties : href, text, file, status and message ', () => {
-    return optFunctions.validateLinks(testData.arrayWrongIn).catch((e) => {
-      expect(e).toEqual(testData.arrayWrongOut);
+    return optFunctions.validateLinks(testData.linkBadIn).then((data) => {
+      expect(data).toEqual(testData.linkBadOut);
+    });
+  });
+  it('should return an array of objects with five properties - catch : href, text, file, status and message ', () => {
+    return optFunctions.validateLinks(testData.linkNotFoundIn).catch(() => {
+      expect().toEqual(testData.linkNotFoundOut);
     });
   });
 });

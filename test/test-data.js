@@ -11,11 +11,6 @@ const arrayThree = [
     path: path.join(process.cwd(), 'README.md'),
     text: 'Meetup',
   },
-  {
-    href: 'https://developer.moziles/docs/Glossary/Ca',
-    path: path.join(process.cwd(), 'README.md'),
-    text: 'MDN',
-  },
 ];
 
 const arrayFive = [
@@ -33,26 +28,9 @@ const arrayFive = [
     status: 200,
     message: 'OK',
   },
-  {
-    href: 'https://developer.moziles/docs/Glossary/Ca',
-    path: path.join(process.cwd(), 'README.md'),
-    text: 'MDN',
-    status: 400,
-    message: 'Bad Request',
-  },
 ];
 
-const arrayOfArrays = [[{
-  path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
-  href: 'https://developer.moziles/docs/Glossary/Ca',
-  text: 'Uso de callbacks',
-},
-{
-  path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
-  href:
-  'https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises',
-  text: 'Consumo de Promesas',
-},
+const arrayOfArrays = [[
 {
   path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
   href:
@@ -90,21 +68,7 @@ const arrayOfArrays = [[{
   text: 'semver',
 }]];
 
-const arrayValidate = [{
-  path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
-  href: 'https://developer.moziles/docs/Glossary/Ca',
-  text: 'Uso de callbacks',
-  status: 400,
-  message: 'Bad Request',
-},
-{
-  path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
-  href:
-  'https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises',
-  text: 'Consumo de Promesas',
-  status: 200,
-  message: 'OK',
-},
+const arrayValidate = [
 {
   path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
   href:
@@ -152,22 +116,12 @@ const arrayValidate = [{
   path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'other_files', 'README.md'),
   href: 'https://se/',
   text: 'semver',
-  status: 400,
-  message: 'Bad Request',
+  status: 'FAIL',
+  message: 'NO FOUND',
 }];
 
 
-const arrayNoValidate = [{
-  path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
-  href: 'https://developer.moziles/docs/Glossary/Ca',
-  text: 'Uso de callbacks',
-},
-{
-  path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
-  href:
-  'https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises',
-  text: 'Consumo de Promesas',
-},
+const arrayNoValidate = [
 {
   path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
   href:
@@ -205,18 +159,33 @@ const arrayNoValidate = [{
   text: 'semver',
 }];
 
-const arrayWrongIn = [{
+const linkBadIn = [{
   path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'other_files', 'README.md'),
-  href: 'https://se/',
-  text: 'semver',
+  href: 'https://medium.com/@lupoool-primeros-pasos-a934515174fb',
+  text: 'link roto',
 }];
 
-const arrayWrongOut = [{
+const linkBadOut = [{
   path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'other_files', 'README.md'),
-  href: 'https://s',
-  text: 'semver',
-  status: 400,
-  message: 'Bad Request',
+  href: 'https://medium.com/@lupoool-primeros-pasos-a934515174fb',
+  text: 'link roto',
+  status: 'FAIL',
+  message: 'NO FOUND',
+}];
+
+
+const linkNotFoundIn = [{
+  path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'other_files', 'README.md'),
+  href: 'https://jfsfsfestjs.io/',
+  text: 'link not found',
+}];
+
+const linkNotFoundOut = [{
+  path: path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'other_files', 'README.md'),
+  href: 'https://medium.com/@lupoool-primeros-pasos-a934515174fb',
+  text: 'link not found',
+  status: 'No status',
+  message: 'ENOTFOUND',
 }];
 
 const testData = {
@@ -225,7 +194,9 @@ const testData = {
   arrayOfArrays: arrayOfArrays,
   arrayValidate: arrayValidate,
   arrayNoValidate: arrayNoValidate,
-  arrayWrongIn: arrayWrongIn,
-  arrayWrongOut: arrayWrongOut,
+  linkBadIn: linkBadIn,
+  linkBadOut: linkBadOut,
+  linkNotFoundIn:linkNotFoundIn,
+  linkNotFoundOut:linkNotFoundOut,
 };
 module.exports = testData;
