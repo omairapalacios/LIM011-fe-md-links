@@ -1,20 +1,19 @@
-
 const path = require('path');
 
 const pathFunctions = require('../lib/path-functions');
 
 const content = '[Jest](https://jestjs.io/)';
 
-const array1 = [{
+const arrayToTest = [{
   href: 'https://jestjs.io/',
   path: path.join(process.cwd(), 'README.md'),
   text: 'Jest',
 }];
 
-const arraymd = [path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
+const arrayPathMd = [path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'Readme.md'),
   path.join(process.cwd(), 'test', 'testMdLinks', 'files', 'other_files', 'README.md')];
 
-describe('test for functions with path library', () => {
+describe('test for functions with path module', () => {
   it('should return true if path is absolute', () => {
     expect(pathFunctions.isPathAbsolute(process.cwd())).toBe(true);
   });
@@ -32,11 +31,11 @@ describe('test for functions with path library', () => {
   });
 
   it('should return an array with links', () => {
-    expect(pathFunctions.extractLinks(path.join(process.cwd(), 'README.md'), content)).toEqual(array1);
+    expect(pathFunctions.extractLinks(path.join(process.cwd(), 'README.md'), content)).toEqual(arrayToTest);
   });
 });
 
-describe('test for functions with fs library', () => {
+describe('test for functions with fs module', () => {
   it('should resolve promise if path is directory', () => {
     return pathFunctions.checkStatsPath(process.cwd())
       .then((stats) => {
@@ -65,11 +64,11 @@ describe('test for functions with fs library', () => {
   });
 });
 
-describe('test for the function that get files md', () => {
+describe('test for the function that get files md - recursive', () => {
   it('should resolve and return a array with paths of files .md', () => {
     return pathFunctions.getFilesMd(path.join(process.cwd(), 'test', 'testMdLinks', 'files'))
       .then((array) => {
-        expect(array).toStrictEqual(arraymd);
+        expect(array).toStrictEqual(arrayPathMd);
       });
   });
 
