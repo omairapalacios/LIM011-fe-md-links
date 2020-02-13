@@ -2,7 +2,7 @@
   "name": "lim011-fe-md-links",
   "version": "1.0.0",
   "description": "library md-links",
-  "main": "lib/main.js",
+  "main": "lib/mdlinks.js",
   "directories": {
     "lib": "lib",
     "test": "test"
