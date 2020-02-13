@@ -23,7 +23,7 @@
     "library"
   ],
   "author": "Omaira Palacios",
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
     "md-links": "lib/cli.js"
   },
