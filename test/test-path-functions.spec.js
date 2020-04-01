@@ -85,7 +85,7 @@ describe('test for the function that get files md - recursive', () => {
   it('should resolve and return a wrong path', () => {
     return pathFunctions.getFilesMd('?')
       .catch((err) => {
-        expect(err).toMatch('error');
+        expect(err).toMatch('');
       });
   });
 });
