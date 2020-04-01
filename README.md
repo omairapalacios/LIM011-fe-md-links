@@ -35,7 +35,7 @@ $ npm i --global @omairapalacios/md-links
 ### Utilizalo como módulo:
 
 ````javascript
-const mdlinks = require('mdlinks');
+const mdlinks = require('@omairapalacios/md-links');
 ````
 ##### Por ejemplo:
 
