@@ -1,5 +1,5 @@
 {
-  "name": "md-links",
+  "name": "@omairapalacios/md-links",
   "version": "1.0.0",
   "description": "library md-links",
   "main": "lib/mdlinks.js",

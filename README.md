@@ -24,10 +24,10 @@ algunas estadísticas.
 
 Versión estable:
 ```sh
-$ npm i omairapalacios/md-links
+$ npm i @omairapalacios/md-links
 ```
 ```sh
-$ npm i --global omairapalacios/md-links
+$ npm i --global @omairapalacios/md-links
 ```
 
 ## Guía de Uso
