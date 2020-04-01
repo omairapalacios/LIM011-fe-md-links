@@ -1,5 +1,5 @@
 {
-  "name": "lim011-fe-md-links",
+  "name": "md-links",
   "version": "1.0.0",
   "description": "library md-links",
   "main": "lib/mdlinks.js",
@@ -46,6 +46,7 @@
     "jest": "^24.9.0"
   },
   "dependencies": {
+    "chalk": "^3.0.0",
     "jsdom": "^16.0.1",
     "markdown-it": "^10.0.0",
     "node-fetch": "^2.6.0"
