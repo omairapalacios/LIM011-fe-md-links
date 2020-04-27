@@ -6,7 +6,10 @@
 <p align="center">
 </p>
 
+<center>
+
 ![David](https://img.shields.io/david/omairapalacios/LIM011-fe-md-links) ![David](https://img.shields.io/npm/v/@omairapalacios/md-links) ![David](https://img.shields.io/github/languages/code-size/omairapalacios/LIM011-fe-md-links?color=ff6994) ![licence](https://img.shields.io/github/license/omairapalacios/LIM011-fe-md-links)
+</center>
 
 ## Descripción
 
@@ -26,7 +29,7 @@ Versión estable:
 $ npm i @omairapalacios/md-links
 ```
 ```sh
-$ npm i --global @omairapalacios/md-links
+$ npm i -g @omairapalacios/md-links
 ```
 
 ## Guía de Uso
